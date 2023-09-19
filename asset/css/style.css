@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+
+/* Start Globel Ruls */
+:root {
+  --main-color: #2D93B9;
+
+
+
+}
+
+* {
+  font-family: 'Almarai', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  outline: none !important;
+  list-style: none !important;
+  font-weight: 400;
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--colorHover);
+  color: #fff;
+  overflow: hidden;
+}
+
+
+body {
+  overflow: hidden;
+  position: relative;
+  background-color: #3C3C3C;
+  color: #EDEFEF;
+}
+
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+/* Start Nav Bar */
+.nav {
+  margin-top: 10px;
+  position: absolute;
+
+}
+.nav nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 30px; */
+}
+.nav nav .left-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 100px; */
+  height: 43px;
+  border-color: #707070;
+  border-width: 1px;
+  border-style: solid;
+  background: #494949;
+  border-style: solid;
+  border-top-left-radius:10px ;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 1px;
+}
+.nav nav .left-nav li a {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+}
+.nav nav .right-nav{
+  width: 100%;
+
+
+}
+.nav nav .right-nav li a{
+  padding: 7px 31px;
+  text-align: center;
+  border-color: #707070;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #EDEFEF;
+  color: #5ED3FF;
+  transition: all ease-in-out 1.ms;
+}
+.nav nav .right-nav li a:hover{
+  background-color: #5ED3FF;
+  color:#EDEFEF;
+}
+/* End Nav Bar */
