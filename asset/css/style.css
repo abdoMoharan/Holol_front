@@ -24,12 +24,12 @@
 *::selection {
   background: var(--colorHover);
   color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   background-color: #3C3C3C;
   color: #EDEFEF;
@@ -46,48 +46,55 @@ a:hover {
 }
 
 /* Start Nav Bar */
-.nav {
-  margin-top: 10px;
-  position: absolute;
 
+
+
+.navbar {
+  margin-top: 1.5rem !important;
+  position: absolute;
+  width: 75% !important;
+  z-index: 1000;
 }
-.nav nav{
-  width: 100%;
+
+.navbar .navbar-nav {
+  width: 80% !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 30px; */
-}
-.nav nav .left-nav{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* gap: 100px; */
   height: 43px;
   border-color: #707070;
   border-width: 1px;
   border-style: solid;
   background: #494949;
   border-style: solid;
-  border-top-left-radius:10px ;
+  border-top-left-radius: 10px;
   border-top-right-radius: 1px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 1px;
 }
-.nav nav .left-nav li a {
+
+
+
+.navbar .navbar-nav .nav-item a {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
+  color: #fff;
+  transition: all ease-in-out 1.ms;
+  ;
 }
-.nav nav .right-nav{
-  width: 100%;
+
+.navbar .navbar-nav .nav-item a:hover {
+  color: var(--main-color);
+}
 
 
-}
-.nav nav .right-nav li a{
+
+.navbar .call-us {
+  margin: 0 30px;
   padding: 7px 31px;
+  display: inline-block;
   text-align: center;
   border-color: #707070;
   border-width: 1px;
@@ -97,9 +104,173 @@ a:hover {
   background-color: #EDEFEF;
   color: #5ED3FF;
   transition: all ease-in-out 1.ms;
+  cursor: pointer;
 }
-.nav nav .right-nav li a:hover{
+
+.navbar .call-us:hover {
   background-color: #5ED3FF;
-  color:#EDEFEF;
+  color: #EDEFEF;
 }
+
 /* End Nav Bar */
+/* Home Section */
+
+.home {
+  position: relative;
+  width: 100%;
+}
+
+.home .box {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.home .box h1 {
+  font-family: 'Almarai';
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.home .box h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-right: solid 3px rgba(0, 255, 0, .75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro',
+    monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, .70);
+  text-transform: uppercase;
+  font-size: 60px;
+
+}
+
+.home .box h2 {
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+.home .box h2 span {
+  color: var(--main-color);
+}
+
+.home .box p {
+  width: 60%;
+  line-height: 2;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 575px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: var(--main-color);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+/* image body */
+.image-body {
+  width: 100% !important;
+  border-left: #5ED3FF 1px solid;
+  border-right: #5ED3FF 1px solid;
+}
+
+.image-body img {
+  width: 100%;
+  height: 100vh;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+}
+
+footer .box {
+  position: absolute;
+  bottom: 2%;
+  right: 25%;
+}
+
+footer .box ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+footer .box ul li a {
+  font-size: 28px;
+  color: var(--main-color);
+}
+
+footer .box ul li a:hover {
+  color: #707070;
+
+}
