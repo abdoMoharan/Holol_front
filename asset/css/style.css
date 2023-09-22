@@ -561,3 +561,26 @@ label.error {
   font-size: 12px;
   color: #000;
 }
+
+
+/* testing preloader */
+.preloader{
+  z-index: 1000;
+  background-color: var(--main-color);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.btn-welcome{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.opening{
+  font-size: 24px;
+  color: var(--main-color);
+}
