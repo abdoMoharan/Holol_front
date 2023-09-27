@@ -18,6 +18,9 @@
     <!-- --------------------------------Start style.css---------------------------------------------------------- -->
     <link rel="stylesheet" href="asset/css/style.css" />
     <!-- --------------------------------End style.css---------------------------------------------------------- -->
+    <!-- --------------------------------Start responsive.css---------------------------------------------------------- -->
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+    <!-- --------------------------------End responsive.css---------------------------------------------------------- -->
     <title>Holol</title>
 </head>
 
@@ -25,7 +28,7 @@
     <!--------------------------------start nav bar && logo  -------------------------------------------->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="custom-nav navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="asset/image/logo.png" alt="" width="150">
@@ -90,34 +93,39 @@
 
                             <h1>beh<span>ance</span></h1>
                         </a>
+                        <h2>show all<span>work's...</span></h2>
+                        <p>Welcome to holol Advertising Agency. a full-service Digital Marketing Agency that helps
+                            businesses of all
+                            size grow and
+                            succeeds</p>
                     </div>
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/asset/image/slider_01.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/asset/image/slider_02.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/asset/image/slider_03.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+
                 </div>
                 <div class="col-md-6">
                     <div class="image-body">
-                        <img src="asset/image/portfolio.jpg" alt="" />
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="asset/image/portfolio.jpg" class=" d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="asset/image/services.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="asset/image/about.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,9 +134,12 @@
     <!--------------------------------End Home-------------------------------------------->
 
     <section class="social">
-        <div class="social-link">
 
-            <ul>
+        <div class="social-link">
+            <div class="icon-open">
+                <i class='bx bx-share-alt bx-spin bx-flip-horizontal' style='color:#ffffff'></i>
+            </div>
+            <ul id="social-icon" class="d-none">
                 <li>
                     <a href="">
                         <i class='bx bx-mobile'></i>
@@ -154,6 +165,16 @@
                         <i class='bx bxl-whatsapp'></i>
                     </a>
                 </li>
+                <li>
+                    <a href="">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -163,6 +184,17 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="asset/library/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./asset/js/script.js" defer></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".icon-open").click(function () {
+
+                $("#social-icon").toggleClass('d-none');
+
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@
 *::selection {
   background: var(--colorHover);
   color: #2D93B9;
-  /* overflow: hidden; */
+
 }
 
 
@@ -33,6 +33,7 @@ body {
   position: relative;
   background-color: #3C3C3C;
   color: #EDEFEF;
+  overflow-x: hidden;
 }
 
 
@@ -53,81 +54,83 @@ a:hover {
 /* Start Nav Bar */
 
 
+@media (min-width: 991px) {
+  .custom-nav {
+    margin-top: 1.5rem !important;
+    position: absolute;
+    width: 85% !important;
+    z-index: 1000;
+  }
 
-.navbar {
-  margin-top: 1.5rem !important;
-  position: absolute;
-  width: 75% !important;
-  z-index: 1000;
+  .custom-nav .navbar-nav {
+    width: 90% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 43px;
+    border-color: #707070;
+    border-width: 1px;
+    border-style: solid;
+    background: #494949;
+    border-style: solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 1px;
+  }
+
+
+
+  .custom-nav .navbar-nav .nav-item a {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+    transition: all ease-in-out 1.ms;
+    ;
+  }
+
+  .custom-nav .navbar-nav .dropdown .btn-custom {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff !important;
+    transition: all ease-in-out 1.ms;
+    ;
+  }
+
+  .custom-nav .navbar-nav .nav-item a:hover {
+    color: var(--main-color);
+  }
+
+
+
+  .custom-nav .call-us {
+    margin: 0 30px;
+    padding: 7px 31px;
+    display: inline-block;
+    text-align: center;
+    border-color: #707070;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #EDEFEF;
+    color: #5ED3FF;
+    transition: all ease-in-out 1.ms;
+    cursor: pointer;
+  }
+
+  .custom-nav .call-us:hover {
+    background-color: #5ED3FF;
+    color: #EDEFEF;
+  }
+
+  /* End Nav Bar */
 }
 
-.navbar .navbar-nav {
-  width: 80% !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 43px;
-  border-color: #707070;
-  border-width: 1px;
-  border-style: solid;
-  background: #494949;
-  border-style: solid;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 1px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 1px;
-}
-
-
-
-.navbar .navbar-nav .nav-item a {
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  color: #fff;
-  transition: all ease-in-out 1.ms;
-  ;
-}
-
-.navbar .navbar-nav .dropdown .btn-custom {
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  color: #fff !important;
-  transition: all ease-in-out 1.ms;
-  ;
-}
-
-.navbar .navbar-nav .nav-item a:hover {
-  color: var(--main-color);
-}
-
-
-
-.custom-nav .call-us {
-  margin: 0 30px;
-  padding: 7px 31px;
-  display: inline-block;
-  text-align: center;
-  border-color: #707070;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  font-size: 16px;
-  background-color: #EDEFEF;
-  color: #5ED3FF;
-  transition: all ease-in-out 1.ms;
-  cursor: pointer;
-}
-
-.navbar .call-us:hover {
-  background-color: #5ED3FF;
-  color: #EDEFEF;
-}
-
-/* End Nav Bar */
 /* Home Section */
 
 .home {
@@ -155,7 +158,6 @@ a:hover {
 .home .box h2 {
   margin-top: 25px;
   margin-bottom: 20px;
-  border-right: solid 3px rgba(0, 255, 0, .75);
   white-space: nowrap;
   overflow: hidden;
   font-family: 'Source Code Pro',
@@ -234,6 +236,8 @@ svg {
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
+  width: 180px;
+  height: 60px;
 }
 
 .btn:hover {
@@ -303,7 +307,9 @@ footer .box ul li a:hover {
 
 .about .box {
   width: 100%;
-  margin: 12rem 0 auto;
+  /* margin: 12rem 0 auto; */
+  margin-top: 12rem;
+  margin-bottom: 2rem;
 }
 
 .about .box .accordion-custom {
@@ -329,6 +335,51 @@ footer .box ul li a:hover {
 
 .about .box .accordion-custom .accordion-item .accordion-body {
   line-height: 1.9;
+}
+
+.company-profile-btn {
+  width: 206px;
+  height: 42px;
+  position: absolute;
+
+}
+
+.company-profile-btn .btn {
+  width: 206px;
+  height: 42px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.company-profile-btn .border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+  width: 206px;
+  height: 42px;
+}
+
+.company-profile-btn .btn:hover {
+  transition: 1s ease-in-out;
+  background: var(--main-color);
+}
+
+.company-profile-btn .btn:hover .border {
+  stroke-dashoffset: -480;
+}
+
+.company-profile-btn .btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 /* services */
@@ -362,7 +413,31 @@ footer .box ul li a:hover {
   font-size: 16px;
 }
 
+.services .box .accordion-custom {
+  width: 100%;
+  padding: 5px;
+}
 
+
+
+.services .box .accordion-custom .accordion-item h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+
+}
+
+.services .box .accordion-custom .accordion-item h1 span {
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.services .box .accordion-custom .accordion-item .accordion-body {
+  line-height: 1.9;
+}
 
 
 
@@ -378,14 +453,14 @@ footer .box ul li a:hover {
 }
 
 .portfolio .carousel {
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
 
 }
 
 .portfolio .carousel .carousel-inner {
 
-  border-radius: 80px !important;
+  /* border-radius: 80px !important; */
 }
 
 .portfolio .box h1 {
@@ -398,6 +473,60 @@ footer .box ul li a:hover {
   font-weight: bold;
   color: var(--main-color);
 
+}
+
+.portfolio .box h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro',
+    monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, .70);
+  text-transform: uppercase;
+  font-size: 60px;
+
+}
+
+.portfolio .box h2 {
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+.portfolio .box h2 span {
+  color: var(--main-color);
+  text-transform: uppercase;
+
+}
+
+.portfolio .box p {
+  width: 60%;
+  line-height: 2;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 575px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 
@@ -488,19 +617,15 @@ footer .box ul li a:hover {
 
 
 
-/* .contact-wrap .contact-info {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-wrap .contact-info ul li {
-  margin-bottom: 15px;
-  color: rgba(255, 255, 255, 0.5);
-} */
-
 .contact-wrap .contact-info ul li .wrap-icon {
   font-size: 20px;
   color: #fff;
   margin-top: 5px;
+}
+
+.contact-wrap {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .contact-wrap .form form {
@@ -513,6 +638,10 @@ footer .box ul li a:hover {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 1px;
   border-color: #707070;
+}
+
+.form form .form-group {
+  margin-top: 20px;
 }
 
 .contact-wrap h3 {
@@ -672,15 +801,40 @@ label.error {
   margin: auto;
   padding: 5px;
   text-align: center;
+  transition: all 1s ease-in-out;
+  /* background-color: #b3b3b3; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
+.social .social-link .icon-open {
+  /* background-color: rgba(255, 255, 255, .30); */
+  text-align: center;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer !important;
+  transition: all 1s ease-in-out;
+}
+
+.social .social-link .icon-open i {
+  font-size: 35px;
+  color: #2D93B9 !important;
+}
+
 .social .social-link ul li {
-  padding: 5px;
-  /* border-left: #2D93B9 1px solid; */
+  padding: 2px;
 
 }
 
 .social .social-link ul li a {
   font-size: 25px;
+  color: #EDEFEF;
+}
+
+.social .social-link ul li a:hover i {
+  color: var(--main-color);
 }

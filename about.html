@@ -18,6 +18,9 @@
     <!-- --------------------------------Start style.css---------------------------------------------------------- -->
     <link rel="stylesheet" href="asset/css/style.css" />
     <!-- --------------------------------End style.css---------------------------------------------------------- -->
+    <!-- --------------------------------Start responsive.css---------------------------------------------------------- -->
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+    <!-- --------------------------------End responsive.css---------------------------------------------------------- -->
     <title>Holol</title>
 </head>
 
@@ -25,7 +28,7 @@
     <!--------------------------------start nav bar && logo  -------------------------------------------->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="custom-nav navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="asset/image/logo.png" alt="" width="150">
@@ -191,6 +194,16 @@
 
                             </div>
                         </div>
+                        <div class="company-profile-btn">
+                            <button class="btn">
+                                <svg viewBox="0 0 180 60" class="border">
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>Company Profile <i class='bx bxs-file-pdf bx-tada'
+                                        style='color:#ffffff'></i></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -204,9 +217,12 @@
     <!--------------------------------End Home-------------------------------------------->
 
     <section class="social">
-        <div class="social-link">
 
-            <ul>
+        <div class="social-link">
+            <div class="icon-open">
+                <i class='bx bx-share-alt bx-spin bx-flip-horizontal' style='color:#ffffff'></i>
+            </div>
+            <ul id="social-icon" class="d-none">
                 <li>
                     <a href="">
                         <i class='bx bx-mobile'></i>
@@ -232,6 +248,16 @@
                         <i class='bx bxl-whatsapp'></i>
                     </a>
                 </li>
+                <li>
+                    <a href="">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -241,6 +267,17 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="asset/library/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./asset/js/script.js" defer></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".icon-open").click(function () {
+
+                $("#social-icon").toggleClass('d-none');
+
+            });
+        });
+    </script>
 </body>
 
 </html>

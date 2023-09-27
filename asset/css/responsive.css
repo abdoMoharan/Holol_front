@@ -1,0 +1,261 @@
+@media(max-width:1376px) {
+    /* Start Home Sections */
+
+    .home .box h1 {
+        font-size: 40px;
+    }
+
+    .home .box h2 {
+        font-size: 45px;
+    }
+
+    /* End Home Sections */
+
+    /* Start  portfolio*/
+    .portfolio .box h2 {
+        font-size: 45px;
+    }
+
+    /* End  portfolio*/
+
+}
+
+@media(max-width:1122px) {
+
+    .custom-nav .navbar-nav {
+        width: 100% !important;
+    }
+}
+
+@media(max-width:1116px) {
+    /* Start Home Sections */
+
+    .home .box h2 {
+        font-size: 40px;
+    }
+
+    /* End Home Sections */
+
+    /* Start  portfolio*/
+    .portfolio .box h2 {
+        font-size: 40px;
+    }
+
+    /* End  portfolio*/
+
+
+}
+
+@media(max-width:991px) {
+
+    /* Start Nav bar */
+    .custom-nav .navbar-nav {
+        width: 100% !important;
+        background: #fff;
+        border-color: #d4cbcb;
+        border-width: 1px;
+        border-style: solid;
+        border-style: solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .custom-nav .navbar-nav .nav-item a {
+        padding: 10px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        color: #0e0d0d;
+        border: 1px solid #d4cbcb;
+        transition: all ease-in-out 1.ms;
+        ;
+    }
+
+    /* End Nab bar */
+    /* Start Home Sections */
+    .home .box {
+        top: 30%;
+    }
+
+    .home .box h1 {
+        font-size: 40px;
+    }
+
+    .home .box h2 {
+        font-size: 35px;
+    }
+
+    /* End Home Sections */
+    /* Start  portfolio*/
+    .portfolio .box h2 {
+        font-size: 35px;
+    }
+
+    .portfolio .box p {
+        width: 100%;
+    }
+
+    /* End  portfolio*/
+
+}
+
+@media((max-width: 992px)) {
+
+    /* Start Home Sections */
+    .home .box {
+        position: absolute;
+        top: 48%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .home .box h2 {
+        animation: none
+    }
+
+    .home .box p {
+        width: 100%;
+        line-height: 2;
+    }
+
+
+    .center {
+        width: 118px;
+        height: 34px;
+        position: absolute;
+    }
+
+    .center .btn {
+        width: 118px;
+        height: 34px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #91C9FF;
+        outline: none;
+        transition: 1s ease-in-out;
+    }
+
+    .center .btn .border {
+        width: 118px;
+        height: 34px;
+    }
+
+    /* End Home Sections */
+
+    /* Start  portfolio*/
+    .portfolio .box {
+        margin: auto;
+    }
+
+    /* End  portfolio*/
+
+    /* Start  about*/
+    .about .box {
+        margin: auto;
+    }
+
+    /* End  about*/
+
+    /* Start  services*/
+    .services .box {
+        margin: auto;
+    }
+
+    /* End  services*/
+    .contact_us {
+        padding: 1rem 0 0 0;
+    }
+
+    .social {
+        display: none;
+    }
+}
+
+@media(max-width:765px) {
+
+    /* Start Home Sections */
+    .home .box {
+        position: absolute;
+        top: 30%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .home .box h1 {
+        font-size: 40px;
+    }
+
+    .home .box h2 {
+        font-size: 25px;
+    }
+
+    .home .box p {
+        width: 90%;
+        line-height: 2;
+    }
+
+    /* End Home Sections */
+}
+
+@media(max-width:540px) {
+
+    /* Start Home Sections */
+    .home .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* display: none; */
+    }
+
+    .home .box h1 {
+        font-size: 40px;
+    }
+
+    .home .box h2 {
+        font-size: 23px;
+        animation: none
+    }
+
+    .home .box p {
+        width: 100%;
+        line-height: 2;
+    }
+
+    .image-body img {
+        width: 100%;
+        height: auto;
+    }
+
+    .center {
+        width: 118px;
+        height: 34px;
+        position: absolute;
+    }
+
+    .center .btn {
+        width: 118px;
+        height: 34px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #91C9FF;
+        outline: none;
+        transition: 1s ease-in-out;
+    }
+
+    .center .btn .border {
+        width: 118px;
+        height: 34px;
+    }
+
+    /* End Home Sections */
+    .about .box .accordion-custom .accordion-item h1 {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+}
