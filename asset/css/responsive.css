@@ -88,13 +88,23 @@
 
     /* End Home Sections */
     /* Start  portfolio*/
-    .portfolio .box h2 {
-        font-size: 35px;
+    .portfolio {
+        padding: 0;
     }
+
+    .portfolio .title h1 {
+        margin-bottom: 15px;
+    }
+
+    .portfolio .title h4 {
+        margin: 20px auto;
+    }
+
+    /* 
 
     .portfolio .box p {
         width: 100%;
-    }
+    } */
 
     /* End  portfolio*/
 
@@ -171,6 +181,46 @@
     .social {
         display: none;
     }
+
+    .lang {
+        display: none;
+    }
+
+    .lang-respo {
+        display: block;
+    }
+
+    .custom-nav .lang-respo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .custom-nav .lang-respo .dropdown {
+
+        width: 100%;
+
+    }
+
+    .custom-nav .lang-respo .dropdown .btn:hover {
+        background: none;
+    }
+
+    .custom-nav .lang-respo .dropdown .dropdown-menu li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .loyalty_program .box {
+
+        margin: 1rem 0 auto
+    }
 }
 
 @media(max-width:765px) {
@@ -195,6 +245,14 @@
     .home .box p {
         width: 90%;
         line-height: 2;
+    }
+
+    .owl-carousel .owl-dots {
+        margin-top: 0;
+    }
+
+    .portfolio .box .accordion-custom .accordion-item .accordion-header button {
+        margin-top: 0 !important;
     }
 
     /* End Home Sections */
@@ -258,4 +316,8 @@
         text-transform: uppercase;
 
     }
+
+    /* .company-profile-btn {
+        padding: 20px;
+    } */
 }

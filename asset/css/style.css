@@ -127,6 +127,9 @@ a:hover {
     color: #EDEFEF;
   }
 
+  .lang-respo {
+    display: none;
+  }
 
   .custom-nav .lang {
     width: 100px;
@@ -134,19 +137,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: auto;
-
   }
 
   .custom-nav .lang .dropdown {
-    border-width: 1px;
-    border-style: solid;
-    background: #494949;
+    border: none;
     border-color: #707070;
-    border-style: solid;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 1px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 1px;
     transition: all 1s ease;
 
   }
@@ -353,7 +348,7 @@ footer .box ul li a:hover {
 .about .box {
   width: 100%;
   /* margin: 12rem 0 auto; */
-  margin-top: 12rem;
+  margin-top: 11rem;
   margin-bottom: 2rem;
 }
 
@@ -383,48 +378,34 @@ footer .box ul li a:hover {
 }
 
 .company-profile-btn {
-  width: 206px;
-  height: 42px;
-  position: absolute;
-
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.company-profile-btn .btn {
-  width: 206px;
-  height: 42px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #91C9FF;
-  outline: none;
-  transition: 1s ease-in-out;
-}
-
-.company-profile-btn .border {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-  width: 206px;
-  height: 42px;
-}
-
-.company-profile-btn .btn:hover {
-  transition: 1s ease-in-out;
-  background: var(--main-color);
-}
-
-.company-profile-btn .btn:hover .border {
-  stroke-dashoffset: -480;
-}
-
-.company-profile-btn .btn span {
-  color: white;
+.company-profile-btn a {
+  text-align: center;
+  width: fit-content;
+  border: 1px solid #2D93B9;
+  padding: 7px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 1px;
+  transition: all 1s ease-in;
   font-size: 18px;
-  font-weight: 100;
+  text-transform: capitalize;
+  color: #fff
+}
+
+.company-profile-btn a:hover {
+  transform: scale(0.95);
+  color: rgb(45, 147, 185);
+  border-color: #ccc;
+  background-color: #ccc;
+
 }
 
 /* services */
