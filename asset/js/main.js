@@ -72,3 +72,43 @@ $(function() {
     $(".carousel-nav a[data-num=" + event.item.index + "]").addClass("active");
   });
 });
+
+
+$(window).on('load scroll',function(){
+
+    
+  if($(window).scrollTop() >50){
+      $('header').addClass('header-active');
+      $('nav').removeClass('nav_custom_scroll')
+  }else{
+      $('header').removeClass('header-active');
+      $('nav').addClass('nav_custom_scroll')
+  }
+  
+  var scrollToTop=$('.bi-arrow-up');
+  if($(window).scrollTop() > 700){
+
+     scrollToTop.show();
+
+  }else{
+
+      scrollToTop.hide();
+  }
+
+
+  if($(window).scrollTop() >600){
+      $('.dropdown-pages').hide(100);
+  } 
+  // $('body').css("overflow","auto");
+  // $('.loding-overlay .sk-cube-grid').fadeOut(200,
+  //     function()
+  //     {
+  //         $(this).parent().fadeOut(500,
+  //             function()
+  //             {
+                  
+  //                 $(this).remove();
+  //             })
+  //     })
+ 
+});
