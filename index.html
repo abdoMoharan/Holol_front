@@ -557,7 +557,7 @@
             <div class="container">
 
               <div class="d-flex carousel-nav">
-                <a href="#" class="col active">graphic design</a>
+                <a href="#" class="col actives">graphic design</a>
                 <a href="#" class="col">motion videos</a>
                 <a href="#" class="col">website && mobile application</a>
               </div>
@@ -863,7 +863,7 @@
         </div>
         <!-- end title -->
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-sx-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12">
           <div class="form">
             <form method="post">
               <div class="row">
@@ -903,7 +903,7 @@
             </form>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sx-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12">
           <div class="row icon-box">
             <div class="col-md-6">
               <div class="info-box">
@@ -1006,39 +1006,20 @@
     </div>
   </section> -->
   <!------------------------------------End Social ---------------------------------------------->
-  <script src="asset/library/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  <!-- --------------------------------------Start top_button_page----------------------------------------------------------- -->
+  <div class="top_button_page">
+    <i class='bx bxs-chevrons-up'></i>
+    </div>
+  <!--  --------------------------------------Ends top_button_page-----------------------------------------------------------  -->
   <script src="./asset/js/jquery.min.js"></script>
+  <script src="asset/library/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+  <script src="asset/library/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
   <script src="./asset/js/popper.js"></script>
-  <script src="./asset/js/bootstrap.min.js"></script>
   <script src="./asset/js/owl.carousel.min.js"></script>
   <script src="./asset/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $(".icon-open").click(function () {
-        $("#social-icon").toggleClass('d-none');
-
-      });
-      $('.logo-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        infinite: true
-      });
-
-
-
-
-      $("#show_form").click(function (e) {
-        e.preventDefault();
-        $("#form").removeClass('d-none');
-
-        $(this).addClass('d-none');
-      });
-    });
+ 
 
   </script>
 </body>

@@ -3,9 +3,6 @@
 /* Start Globel Ruls */
 :root {
   --main-color: #2D93B9;
-
-
-
 }
 
 * {
@@ -29,13 +26,37 @@
 
 body {
   /* overflow: hidden; */
-  position: relative;
+  /* position: relative; */
   background-color: #3C3C3C;
   color: #EDEFEF;
   overflow-x: hidden;
 }
 
 
+.top_button_page {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  border: 50%;
+  border-color: var(--main-color);
+  border-width: 1px;
+  border-style: solid;
+  background: #3C3C3C;
+  border-style: solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 1px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.top_button_page:hover{
+  background-color: var(--main-color);
+}
+.top_button_page i{
+  font-size: 2rem;
+  padding: 5px;
+}
 a {
   /* color: #ffff; */
   text-decoration: none;
@@ -45,9 +66,12 @@ a:hover {
   color: var(--main-color);
 }
 
+.actives {
+  color: var(--main-color) !important;
+}
+
 .active {
   color: var(--main-color) !important;
-
 }
 
 /* Start Nav Bar */
@@ -773,7 +797,7 @@ footer .box ul li a:hover {
   border-top-right-radius: 1px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 1px;
-  border: 1px solid #2D93B9;
+  /* border: 1px solid #2D93B9; */
 
 }
 
@@ -801,7 +825,7 @@ footer .box ul li a:hover {
   font-size: 18px;
   text-transform: capitalize;
   color: #fff;
-  margin: 10px auto;
+  margin: 15px auto;
 
 }
 
@@ -817,7 +841,7 @@ footer .box ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   margin: auto;
 }
@@ -828,7 +852,8 @@ footer .box ul li a:hover {
   color: var(--main-color);
   margin: 1rem;
   padding: 5px;
-  width: 100%;
+  width: 80%;
+  height:150px;
   display: flex;
   align-items: center;
   justify-content: center;
