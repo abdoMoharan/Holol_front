@@ -115,4 +115,10 @@ $(window).on("load scroll", function() {
 
     $(this).addClass("d-none");
   });
+
+  // Get the current year
+  var currentYear = new Date().getFullYear();
+
+  // Set the current year in the footer
+  document.getElementById("current-year").textContent = currentYear;
 });
