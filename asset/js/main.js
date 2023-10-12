@@ -121,4 +121,9 @@ $(window).on("load scroll", function() {
 
   // Set the current year in the footer
   document.getElementById("current-year").textContent = currentYear;
+
+  AOS.init({
+    duration: 1500,
+    delay: 400
+  });
 });

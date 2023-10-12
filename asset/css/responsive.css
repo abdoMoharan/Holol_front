@@ -11,13 +11,6 @@
 
     /* End Home Sections */
 
-    /* Start  portfolio*/
-    .portfolio .box h2 {
-        font-size: 45px;
-    }
-
-    /* End  portfolio*/
-
 }
 
 @media(max-width:1122px) {
@@ -36,200 +29,28 @@
 
     /* End Home Sections */
 
-    /* Start  portfolio*/
-    .portfolio .box h2 {
-        font-size: 40px;
-    }
 
-    /* End  portfolio*/
 
 
 }
 
-@media(max-width:991px) {
-
+@media(max-width: 992px) {
     /* Start Nav bar */
-    .custom-nav .navbar-nav {
-        width: 100% !important;
-        background: #fff;
-        border-color: #d4cbcb;
-        border-width: 1px;
-        border-style: solid;
-        border-style: solid;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 1px;
-        border-bottom-right-radius: 10px;
-    }
 
+    .custom-nav .language .btn,
     .custom-nav .navbar-nav .nav-item a {
         padding: 10px 25px;
-        font-size: 16px;
-        font-weight: bold;
-        font-style: normal;
-        color: #0e0d0d;
-        border: 1px solid #d4cbcb;
-        transition: all ease-in-out 1.ms;
-        ;
+        color: #fff;
     }
 
-    /* End Nab bar */
-    /* Start Home Sections */
-    .home .box {
-        top: 30%;
-    }
+    /* End Nav bar */
+    /* Home */
 
-    .home .box h1 {
-        font-size: 40px;
-    }
-
-    .home .box h2 {
-        font-size: 35px;
-    }
-
-    /* End Home Sections */
-    /* Start  portfolio*/
-    .portfolio {
-        padding: 0;
-    }
-
-    .portfolio .title h1 {
-        margin-bottom: 15px;
-    }
-
-    .portfolio .title h4 {
-        margin: 20px auto;
-    }
-
-    /* 
-
-    .portfolio .box p {
-        width: 100%;
-    } */
-
-    /* End  portfolio*/
-
-}
-
-@media((max-width: 992px)) {
-
-    /* Start Home Sections */
     .home .box {
         position: absolute;
-        top: 48%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-
-    }
-
-    .home .box h2 {
-        animation: none
-    }
-
-    .home .box p {
-        width: 100%;
-        line-height: 2;
-    }
-
-
-    .center {
-        width: 118px;
-        height: 34px;
-        position: absolute;
-    }
-
-    .center .btn {
-        width: 118px;
-        height: 34px;
-        cursor: pointer;
-        background: transparent;
-        border: 1px solid #91C9FF;
-        outline: none;
-        transition: 1s ease-in-out;
-    }
-
-    .center .btn .border {
-        width: 118px;
-        height: 34px;
-    }
-
-    /* End Home Sections */
-
-    /* Start  portfolio*/
-    .portfolio .box {
-        margin: auto;
-    }
-
-    /* End  portfolio*/
-
-    /* Start  about*/
-    .about .box {
-        margin: auto;
-    }
-
-    /* End  about*/
-
-    /* Start  services*/
-    .services .box {
-        margin: auto;
-    }
-
-    /* End  services*/
-    .contact_us {
-        padding: 1rem 0 0 0;
-    }
-
-    .social {
-        display: none;
-    }
-
-    .lang {
-        display: none;
-    }
-
-    .lang-respo {
-        display: block;
-    }
-
-    .custom-nav .lang-respo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .custom-nav .lang-respo .dropdown {
-
-        width: 100%;
-
-    }
-
-    .custom-nav .lang-respo .dropdown .btn:hover {
-        background: none;
-    }
-
-    .custom-nav .lang-respo .dropdown .dropdown-menu li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    .loyalty_program .box {
-
-        margin: 1rem 0 auto
-    }
-}
-
-@media(max-width:765px) {
-
-    /* Start Home Sections */
-    .home .box {
-        position: absolute;
-        top: 30%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+        top: 20%;
+        left: 50%;
+        transform: translate(-77%, -50%);
 
     }
 
@@ -238,85 +59,216 @@
     }
 
     .home .box h2 {
+        animation: none;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro',
+            monospace;
+        color: rgba(255, 255, 255, .70);
+        text-transform: uppercase;
         font-size: 25px;
     }
 
-    .home .box p {
-        width: 90%;
-        line-height: 2;
-    }
-
-    .owl-carousel .owl-dots {
-        margin-top: 0;
-    }
-
-    .portfolio .box .accordion-custom .accordion-item .accordion-header button {
-        margin-top: 0 !important;
-    }
-
-    /* End Home Sections */
-}
-
-@media(max-width:540px) {
-
-    /* Start Home Sections */
-    .home .box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* display: none; */
-    }
-
-    .home .box h1 {
-        font-size: 40px;
-    }
-
-    .home .box h2 {
-        font-size: 23px;
-        animation: none
-    }
-
-    .home .box p {
+    /*End Home */
+    /* About */
+    .services .box .accordion-custom,
+    .about .box .accordion-custom {
         width: 100%;
-        line-height: 2;
+        padding: 2px;
     }
 
-    .image-body img {
-        width: 100%;
-        height: auto;
-    }
-
-    .center {
-        width: 118px;
-        height: 34px;
-        position: absolute;
-    }
-
-    .center .btn {
-        width: 118px;
-        height: 34px;
-        cursor: pointer;
-        background: transparent;
-        border: 1px solid #91C9FF;
-        outline: none;
-        transition: 1s ease-in-out;
-    }
-
-    .center .btn .border {
-        width: 118px;
-        height: 34px;
-    }
-
-    /* End Home Sections */
+    .services .box .accordion-custom .accordion-item h1,
     .about .box .accordion-custom .accordion-item h1 {
         font-size: 25px;
         font-weight: bold;
         text-transform: uppercase;
+        color: #c5c9d991;
+    }
+
+    .services .box h1 {
+        font-size: 29px;
 
     }
 
-    /* .company-profile-btn {
-        padding: 20px;
+    .services .services-image {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    /* .home .image-body img {
+        height: 80vh;
     } */
+
+    .home .box {
+        position: absolute !important;
+        top: 40% !important;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home .box p {
+        width: 100%;
+    }
+
+    .center .btn {
+        background-color: #2D93B9;
+        font-size: 13px;
+    }
+
+    /* .box-row-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    } */
+
+    /* About */
+    .services .box .accordion-custom,
+    .about .box .accordion-custom {
+        margin-top: 2rem;
+    }
+
+    /* brand */
+    .portfolio .title h1,
+    .brand h1,
+    .loyalty_program .title h1,
+    .contact_us .title h1 {
+        font-size: 36px;
+        margin-bottom: 29px;
+    }
+
+    .logo-slider {
+        width: 80%;
+    }
+
+    .carousel-nav a {
+        padding: 7px;
+        font-size: 17px;
+    }
+
+    .portfolio .carousel-item .box {
+        padding: 0;
+    }
+
+    .portfolio .carousel-item .box .contact {
+        /* width: 100%; */
+
+        margin-top: 1rem;
+    }
+
+    .portfolio .carousel-item .box .contact h1 {
+        font-size: 25px !important;
+        margin: 0px auto;
+    }
+
+    .portfolio .carousel-item .box .contact p {
+        line-height: 2;
+        font-size: 13px;
+        padding: 1px;
+        color: var(--main-color);
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .loyalty_program .box-content h2 {
+        font-size: 25px !important;
+
+        margin: 4px auto;
+    }
+
+    .loyalty_program .box-content p {
+        font-size: 13px;
+        padding: 1px;
+        margin: 12px auto;
+    }
+
+    .loyalty_program .loyalty_content .box-form {
+
+        padding: 7px;
+
+    }
+
+    .btn-box {
+        margin: 20px auto;
+    }
+}
+
+@media(max-width:321px) {
+
+    .home,
+    .about,
+    .services {
+        margin-bottom: 3rem;
+    }
+
+    /* .home .image-body img {
+        height: 74vh;
+    } */
+
+    .box-row-image {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+
+    }
+
+    .services .box .accordion-custom .accordion-item h1,
+    .about .box .accordion-custom .accordion-item h1 {
+        font-size: 20px;
+    }
+
+    .portfolio .title h1,
+    .brand h1,
+    .loyalty_program .title h1,
+    .contact_us .title h1 {
+        font-size: 29px;
+
+    }
+
+
+    .carousel-nav a {
+        padding: 1px;
+        font-size: 11px;
+    }
+
+    .portfolio .carousel-item .box .contact {
+        margin-top: 0rem;
+    }
+
+    .portfolio .carousel-item .box .contact h1 {
+        font-size: 21px !important;
+    }
+
+    .portfolio .carousel-item .box .contact p {
+        font-size: 11px;
+        padding: 1px;
+
+    }
+
+
+    .contact_us .icon-box .info-box {
+        width: 100%;
+        margin: 0rem;
+
+    }
+
+    .contact_us .icon-box .info-box i {
+        font-size: 2.5rem;
+    }
+
+    footer .content .icon ul li a {
+        margin: auto;
+    }
+
+    .whatsapp_button_page,
+    .social {
+        display: none;
+
+    }
 }
