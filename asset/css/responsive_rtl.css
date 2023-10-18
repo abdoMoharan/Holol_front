@@ -1,0 +1,308 @@
+ body {
+     direction: rtl;
+ }
+
+ @media(max-width:1376px) {
+     /* Start Home Sections */
+
+     .home .box h1 {
+         font-size: 40px;
+     }
+
+     .home .box h2 {
+         font-size: 45px;
+     }
+
+     /* End Home Sections */
+
+ }
+
+ @media(max-width:1122px) {
+
+     .custom-nav .navbar-nav {
+         width: 100% !important;
+     }
+ }
+
+ @media(max-width:1116px) {
+     /* Start Home Sections */
+
+     .home .box h2 {
+         font-size: 40px;
+     }
+
+     /* End Home Sections */
+
+
+
+
+ }
+
+ @media(max-width: 992px) {
+     /* Start Nav bar */
+
+     .custom-nav .language .btn,
+     .custom-nav .navbar-nav .nav-item a {
+         padding: 10px 25px;
+         color: #fff;
+     }
+
+     /* End Nav bar */
+     /* Home */
+
+     .home .box {
+         position: absolute;
+         top: 3%;
+         right: 50%;
+         transform: translate(84%, 50%);
+
+     }
+
+     .home .box h1 {
+         font-size: 40px;
+     }
+
+     .home .box h2 {
+         animation: none;
+         white-space: nowrap;
+         overflow: hidden;
+         font-family: 'Source Code Pro',
+             monospace;
+         color: rgba(255, 255, 255, .70);
+         text-transform: uppercase;
+         font-size: 18px;
+     }
+
+     /*End Home */
+     /* About */
+     .services .box .accordion-custom,
+     .about .box .accordion-custom {
+         width: 100%;
+         padding: 2px;
+     }
+
+     .services .box .accordion-custom .accordion-item h1,
+     .about .box .accordion-custom .accordion-item h1 {
+         font-size: 25px;
+         font-weight: bold;
+         text-transform: uppercase;
+         color: #c5c9d991;
+     }
+
+     .services .box h1 {
+         font-size: 29px;
+
+     }
+
+     .services .services-image {
+         display: none;
+     }
+
+     .about,
+
+     .loyalty_program,
+     .portfolio,
+     .contact_us {
+         padding-top: 5rem !important;
+     }
+
+     .services {
+         padding-top: 7rem;
+     }
+ }
+
+ @media(max-width:768px) {
+
+     /* .home .image-body img {
+        height: 80vh;
+    } */
+
+     .home .box {
+         position: absolute !important;
+         top: 40% !important;
+         right: 55%;
+         transform: translate(+50%, -50%);
+     }
+
+     .home .box p {
+         width: 100%;
+     }
+
+     .center .btn {
+         background-color: #2D93B9;
+         font-size: 13px;
+     }
+
+     /* .box-row-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    } */
+
+     /* About */
+     .services .box .accordion-custom,
+     .about .box .accordion-custom {
+         margin-top: 2rem;
+     }
+
+     /* brand */
+     .portfolio .title h1,
+     .brand h1,
+     .loyalty_program .title h1,
+     .contact_us .title h1 {
+         font-size: 36px;
+         margin-bottom: 29px;
+     }
+
+     .logo-slider {
+         width: 80%;
+     }
+
+     .carousel-nav a {
+         padding: 7px;
+         font-size: 17px;
+     }
+
+     .portfolio .carousel-item .box {
+         padding: 0;
+     }
+
+     .portfolio .carousel-item .box .contact {
+         /* width: 100%; */
+
+         margin-top: 1rem;
+     }
+
+     .portfolio .carousel-item .box .contact h1 {
+         font-size: 25px !important;
+         margin: 0px auto;
+     }
+
+     .portfolio .carousel-item .box .contact p {
+         line-height: 2;
+         font-size: 13px;
+         padding: 1px;
+         color: var(--main-color);
+         width: 100%;
+         margin: auto;
+         text-align: center;
+     }
+
+
+     .loyalty_program .box-content h2 {
+         font-size: 25px !important;
+
+         margin: 4px auto;
+     }
+
+     .loyalty_program .box-content p {
+         font-size: 13px;
+         padding: 1px;
+         margin: 12px auto;
+     }
+
+     .loyalty_program .loyalty_content .box-form {
+
+         padding: 7px;
+
+     }
+
+     .btn-box {
+         margin: 20px auto;
+     }
+ }
+
+ @media(max-width:321px) {
+     .home .box {
+         position: absolute !important;
+         top: 40% !important;
+         right: 40%;
+
+         transform: translate(+50%, -50%);
+
+     }
+
+     .home .box h1 {
+         font-size: 40px;
+     }
+
+     .home .box h2 {
+         display: none;
+     }
+
+     .home .box p {
+         width: 100%;
+     }
+
+     .home,
+     .about,
+     .services {
+         margin-bottom: 3rem;
+     }
+
+     /* .home .image-body img {
+        height: 74vh;
+    } */
+
+     .box-row-image {
+         display: flex;
+         align-items: start;
+         justify-content: start;
+
+     }
+
+     .services .box .accordion-custom .accordion-item h1,
+     .about .box .accordion-custom .accordion-item h1 {
+         font-size: 20px;
+     }
+
+     .portfolio .title h1,
+     .brand h1,
+     .loyalty_program .title h1,
+     .contact_us .title h1 {
+         font-size: 29px;
+
+     }
+
+
+     .carousel-nav a {
+         padding: 1px;
+         font-size: 11px;
+     }
+
+     .portfolio .carousel-item .box .contact {
+         margin-top: 0rem;
+     }
+
+     .portfolio .carousel-item .box .contact h1 {
+         font-size: 21px !important;
+     }
+
+     .portfolio .carousel-item .box .contact p {
+         font-size: 11px;
+         padding: 1px;
+
+     }
+
+
+     .contact_us .icon-box .info-box {
+         width: 100%;
+         margin: 0rem;
+
+     }
+
+     .contact_us .icon-box .info-box i {
+         font-size: 2.5rem;
+     }
+
+     footer .content .icon ul li a {
+         margin: auto;
+     }
+
+     .whatsapp_button_page,
+     .social {
+         display: none;
+
+     }
+ }

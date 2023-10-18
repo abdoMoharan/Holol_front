@@ -94,7 +94,17 @@
         display: none;
     }
 
+    .about,
 
+    .loyalty_program,
+    .portfolio,
+    .contact_us {
+        padding-top: 5rem !important;
+    }
+
+    .services {
+        padding-top: 7rem;
+    }
 }
 
 @media(max-width:768px) {

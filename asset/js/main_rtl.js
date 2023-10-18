@@ -1,6 +1,7 @@
 $(function() {
   var owl = $(".owl-1");
   owl.owlCarousel({
+    rtl: true,
     loop: false,
     margin: 0,
     nav: false,
@@ -58,6 +59,7 @@ $(window).on("load scroll", function() {
     $("#social-icon").toggleClass("d-none");
   });
   $(".logo-slider").slick({
+    rtl: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
