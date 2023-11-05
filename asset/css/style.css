@@ -1591,10 +1591,109 @@ a:hover {
  }
 
 
+.box-blog .content-blog{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #302e2e9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
 
 
+.box-blog .content-blog .date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px;
+}
+.box-blog .content-blog .date .date-part-one{
+  color: var(--main-color);
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  margin-bottom: 6px;
+}
+.box-blog .content-blog .date .date-part-two
+{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
 
 
+.box-blog .content-blog .content {
+  display: flex;
+  align-items: flex-star;
+  justify-content: flex-start;
+  flex-direction: column; 
+  padding: 5px;
+  margin: 10px;
+}
+.box-blog .content-blog .content .content-title{
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.box-blog .content-blog .content hr{
+  width: 100%;
+  background-color: #fff;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #fff;
+}
+
+.box-blog .content-blog .content .content-text{
+  width: 100%;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 200;
+
+}
+
+.box-blog .content-blog .content .blog-link{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+}
+
+.box-blog .content-blog .content .blog-link ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* margin: 10px; */
+  width: 100%;
+}
+
+.box-blog .content-blog .content .blog-link .read-more{
+  background-color: #3C3C3C;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  padding: 5px 35px;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  /* border-radius: 1em; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 1px;
+  transition: all 1s ease-in-out;
+  color: #fff;
+}
+
+.box-blog .content-blog .content .blog-link .read-more:hover{  
+  color:var(--main-color);
+  transform: scale(1.1);
+}
 
 
  /* Start Blogs  Pages */
