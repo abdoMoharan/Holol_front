@@ -105,6 +105,24 @@
     .services {
         padding-top: 7rem;
     }
+
+    /* Start  Blogs  Pages */
+    .box-blog .content-blog .date {
+        display: none;
+    }
+
+    .box-blog .content-blog {
+        position: absolute;
+        bottom: -250px;
+    }
+
+    .box-blog .content-blog .content .blog-link .read-more {
+        padding: 3px 8px;
+        font-size: 16px;
+    }
+
+    /* End  Blogs  Pages */
+
 }
 
 @media(max-width:768px) {
@@ -280,5 +298,10 @@
     .social {
         display: none;
 
+    }
+
+    /* Start  Blogs  Pages */
+    .box-blog .content-blog .content-text {
+        display: none;
     }
 }
